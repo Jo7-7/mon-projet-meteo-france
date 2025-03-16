@@ -15,7 +15,21 @@ This project aims to forecast weather conditions (temperature, rainfall, humidit
 - TensorFlow (Optional for Deep Learning)
 
 ## 📂 Project Structure:
-weather-forecasting-ml/ ├── data/ │ ├── raw/ # Original unprocessed data │ └── processed/ # Cleaned and preprocessed datasets ├── notebooks/ # Exploratory analysis and modeling notebooks ├── scripts/ # Python scripts for preprocessing and model training ├── models/ # Saved trained ML models ├── visualizations/ # Graphs, charts, and visual outputs ├── requirements.txt # Python package dependencies ├── LICENSE # MIT License file └── README.md # Project overview, setup instructions, etc.
+
+```bash
+weather-forecasting-ml/
+├── data/
+│   ├── raw/                 # Original unprocessed data
+│   └── processed/           # Cleaned and preprocessed datasets
+├── notebooks/               # Exploratory analysis and modeling notebooks
+├── scripts/                 # Python scripts for preprocessing and model training
+├── models/                  # Saved trained ML models
+├── visualizations/          # Graphs, charts, and visual outputs
+├── requirements.txt         # Python package dependencies
+├── LICENSE                  # MIT License
+└── README.md                # Project overview and setup instructions
+```
+
 
 ## 🚧 Progress Checklist:
 - [x] Project repository setup & environment preparation
