@@ -33,7 +33,7 @@ weather-forecasting-ml/
 
 ## 🚧 Progress Checklist:
 - [x] Project repository setup & environment preparation
-- [ ] Dataset selection & Exploratory Data Analysis (EDA)
+- [x] Dataset selection & Exploratory Data Analysis (EDA)
 - [ ] Feature engineering & data preprocessing
 - [ ] Model training, evaluation, and comparison
 - [ ] Forecast visualization and interpretation
