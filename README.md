@@ -58,7 +58,7 @@ Ce projet illustre une démarche data science complète sur des données météo
 
 - **Dataiku DSS** : Recettes visuelles pour le cleaning et la préparation, dashboard interactif.
 - **Python (Anaconda/Jupyter)** : Analyse exploratoire, modélisation (pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost).
-- **Reproductibilité** : Dépendances dans `requirements.txt` ou `environment.yml`.
+- **Reproductibilité** : Dépendances dans `requirements.txt`.
 - **Dataset original** : [Kaggle - Daily Temperature of Major Cities](https://www.kaggle.com/datasets/sudalairajkumar/daily-temperature-of-major-cities)
 
 ---
@@ -98,25 +98,25 @@ Ce projet illustre une démarche data science complète sur des données météo
 ## Visualisations
 
 ### Régression linéaire : Prédictions vs Réalité
-![Régression linéaire](../weather-forecasting-ml/dashbord/heatmap_ville_mois.png)
+![Régression linéaire](../mon-projet-meteo-france/dashbord/heatmap_ville_mois.png)
 > Le modèle linéaire simple ne capte pas la saisonnalité. La prédiction est très éloignée des valeurs réelles.
 
 ---
 
 ### XGBoost : Prédictions vs Réalité
-![XGBoost](../weather-forecasting-ml/dashbord/pred_vs_real_xgboost.png)
+![XGBoost](../mon-projet-meteo-france/dashbord/pred_vs_real_xgboost.png)
 > XGBoost améliore nettement le fit. Les prédictions suivent bien les valeurs réelles, avec une légère saturation aux extrêmes.
 
 ---
 
 ### Températures à Paris et record historique
-![Températures à Paris](../weather-forecasting-ml/dashbord/temp_paris_record.png)
+![Températures à Paris](../mon-projet-meteo-france/dashbord/temp_paris_record.png)
 > Courbe de température à Paris de 1995 à 2020, record de chaleur annoté.
 
 ---
 
 ### Heatmap : Température moyenne par mois et par ville
-![Heatmap ville/mois](../weather-forecasting-ml/dashbord/heatmap_ville_mois.png)
+![Heatmap ville/mois](../mon-projet-meteo-france/dashbord/heatmap_ville_mois.png)
 > La saisonnalité et les différences de climat entre Paris et Bordeaux sont immédiatement visibles.
 
 ---
