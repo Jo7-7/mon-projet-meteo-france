@@ -48,7 +48,7 @@ Ce projet illustre une démarche data science complète sur des données météo
 │ ├── pred_vs_real_xgboost.png
 │ ├── temp_paris_record.png
 │ └── heatmap_ville_mois.png
-├── requirements.txt / environment.yml
+├── requirements.txt
 └── .gitignore
 ```
 
