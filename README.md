@@ -98,7 +98,7 @@ Ce projet illustre une démarche data science complète sur des données météo
 ## Visualisations
 
 ### Régression linéaire : Prédictions vs Réalité
-![Régression linéaire](../mon-projet-meteo-france/dashbord/heatmap_ville_mois.png)
+![Régression linéaire](../mon-projet-meteo-france/dashbord/pred_vs_real_linear.png)
 > Le modèle linéaire simple ne capte pas la saisonnalité. La prédiction est très éloignée des valeurs réelles.
 
 ---
