@@ -170,7 +170,41 @@ Ce projet illustre une démarche data science complète sur des données météo
 - [Documentation Dataiku](https://doc.dataiku.com/)
 - [XGBoost Python API](https://xgboost.readthedocs.io/en/latest/python/index.html)
 
+
+## Approche no code (Dataiku)
+
+La préparation et le nettoyage des données ont été réalisés de manière totalement visuelle grâce à Dataiku DSS, sans code Python :
+
+- **Filtrage**  
+  Utilisation d’une recette “Filter” pour ne conserver que les lignes où `Country` = ‘France’.
+
+- **Nettoyage des valeurs aberrantes**  
+  Recette “Filter” pour supprimer les lignes où `AvgTemperature = -99`, puis recette “Clean” pour gérer les NaN éventuels.
+
+- **Transformation des températures**  
+  Recette “Formula” : conversion des températures de Fahrenheit à Celsius via une formule personnalisée.
+
+- **Création de la colonne date**  
+  Recette “Formula” pour assembler les champs `Year`, `Month`, `Day` en un seul champ `date` (format AAAA-MM-JJ).
+
+- **Export**  
+  Recette “Export” pour générer le dataset final utilisé pour l’EDA et la modélisation en Python.
+
+*Voir `/dataiku-flow/` pour des captures du flow et des recettes utilisées.*
+
+### Approche no code (Dataiku) – pipeline de préparation
+
+Le pipeline de nettoyage et de préparation a été réalisé via des recettes visuelles dans Dataiku DSS :
+
+![Vue du flow Dataiku](dataiku-flow/flow_overview.png)
+*Exemple de flow Dataiku : chaque étape correspond à une recette visuelle.*
+
+- Filtrage des lignes France → ![Recette filtre France](dataiku-flow/recette_filtre_france.png)
+- Nettoyage des valeurs aberrantes → ![Recette nettoyage](dataiku-flow/recette_nettoyage.png)
+- Conversion des températures → ![Recette transformation](dataiku-flow/recette_transformation.png)
+
+*Toutes les transformations sont traçables et sans code. L’export du jeu propre a ensuite permis de basculer vers le notebook Python pour l’analyse approfondie.*
+
 ---
 
 *Réalisé par Josué KOFFI [LinkedIn](https://www.linkedin.com/in/josu%C3%A9-kinsanh-nixxon-koffi/) . Projet open source et pédagogique, toute contribution est bienvenue !*
-
